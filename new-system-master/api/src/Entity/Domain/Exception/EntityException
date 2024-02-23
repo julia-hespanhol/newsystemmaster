@@ -1,0 +1,16 @@
+<?php
+
+namespace Experiment\NewSystem\Entity\Domain\Exception;
+
+use DomainException;
+
+class EntityException extends DomainException
+{
+    public static function entityNotFound(): self
+    {
+        $message = "Entity not found.";
+        return new self($message);
+    }
+
+    
+}

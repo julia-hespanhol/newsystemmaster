@@ -1,0 +1,19 @@
+{
+    "type": "object",
+    "required": [
+        "entity"
+    ],
+    "properties": {
+        "entity": {
+            "type": "object",
+            "required": [
+                "name"
+            ],
+            "properties": {
+                "name": {
+                    "type": "string"
+                }
+            }
+        }
+    }
+}

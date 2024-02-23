@@ -1,0 +1,23 @@
+{
+    "auth": {
+        "sso": "keycloak",
+        "ignore": ["/public"]
+    },
+    "user": {
+        "class": "Experiment\\NewSystem\\ApiUser"
+    },
+    "endpoints": {
+        "folders": [
+            "configuration/routes"
+        ],
+        "files": [],
+        "user": {
+            "additionalProperties": [
+                {
+                    "key": "id",
+                    "getter": "getId"
+                }
+            ]
+        }
+    }
+}

@@ -1,0 +1,24 @@
+{
+    "type": "controller",
+    "class": "Experiment\\NewSystem\\Entity\\Infrastructure\\Web\\EntityController",
+    "paths": {
+        "/entities": {
+            "GET": {
+                "method": "findAllEntities"
+            },
+            "POST": {
+                "method": "registerEntity",
+                "schema": "resources/schemas/register-entity.json"
+            },
+            "PATCH": {
+                "method": "updateEntity",
+                "schema": "resources/schemas/update-entity.json"
+            }
+        },
+        "/entities/:id": {
+            "GET": {
+                "method": "findEntity"
+            }
+        }
+    }
+}
